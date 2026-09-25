@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How XFG Matchmaking handles Discord identity, game tags, lobbies, cross-server sharing, browser audio, and deletion requests.">
+<meta name="theme-color" content="#04123b">
+<title>Privacy Policy · XFG Matchmaking</title>
+<link rel="icon" type="image/png" href="assets/app-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html"><img src="assets/app-icon.png" width="42" height="42" alt=""><span>XFG Matchmaking</span></a>
+<div class="nav-links"><a href="terms.html">Terms of Service</a><a href="privacy.html" aria-current="page">Privacy Policy</a></div>
+</nav></header>
+<main id="main"><article class="document">
+<p class="eyebrow">XfinitGaming · Legal</p><h1>Privacy Policy</h1><div class="meta"><span><strong>Last updated:</strong> September 24, 2026</span><span><strong>Application:</strong> XFG Matchmaking</span><span><strong>Application ID:</strong> 1328105346098532352</span></div>
+<p>This Policy explains how XfinitGaming (“we,” “us,” or “our”) handles information through the XFG Matchmaking Discord bot, Activity, associated legal pages, and optional browser voice service.</p>
+<div class="notice"><strong>Important visibility note:</strong> Hosting or joining a lobby can display your Discord name, avatar, and relevant game tag to other members. Shared host listings can also appear across participating servers. Your full saved Player ID is not published as a cross-server profile.</div>
+<h2>1. Information we handle</h2>
+<h3>Discord identity and server information</h3>
+<p>We handle Discord user and server IDs, display names, avatar references, relevant membership and permission information, and voice-channel membership needed for matchmaking, access checks, and voice features. Activity sign-in uses Discord authorization to identify you; we do not ask for your Discord password.</p>
+<p>Server setup stores selected channel, category, forum, message, and role identifiers where needed, invitation links, discovery settings, and setup or repair status. Administrative onboarding records may include the recipient, message or channel identifier, and delivery status.</p>
+<h3>Player ID and matchmaking activity</h3>
+<p>We store the game tags and platform or region preferences you choose to save, plus lobby game and mode, notes, host, requested capacity, member and waitlist participation, ready status, moderation or speaking permissions, and relevant timestamps. Cross-server participation may also store your source server ID and avatar reference.</p>
+<p>Region is a preference you enter, not precise location tracking. A relevant game tag may be copied into a lobby roster; it is not a complete copy of all your saved identities.</p>
+<h3>Authentication and operation</h3>
+<p>Discord authorization codes and access tokens are processed to sign you in. Short-lived application sessions contain identity and expiry information. The application does not store these access tokens in its matchmaking database. Operational diagnostics may contain service errors and user, server, channel, or lobby identifiers.</p>
+<p>The bot does not request Discord’s message-content or online-presence intents. It may inspect recent messages and their component identifiers in a configured hub channel to locate or restore its own matchmaking panel; this is not general chat logging.</p>
+<h2>2. How we use information</h2>
+<ul><li>Authenticate users and check server, lobby, and host permissions.</li><li>Save Player ID preferences and relevant game tags.</li><li>Display and update lobbies, rosters, waitlists, readiness, and voice state.</li><li>Operate cross-server discovery, setup, forum posts, and temporary voice rooms.</li><li>Relay optional browser audio, enforce host mute controls, and remove unauthorized access.</li><li>Handle support, investigate errors or abuse, and comply with applicable obligations.</li></ul>
+<p>The Service does not include targeted advertising, data-sale, or AI-training features. Browser audio is used to carry the requested conversation, not to train AI models.</p>
+<h2>3. What other people can see</h2>
+<h3>Within a participating server</h3>
+<p>Members who can access the matchmaking board or its posts may see host and roster display names, avatars, relevant game tags, lobby details, ready or voice status, and waitlist information. These details are not necessarily restricted to the players in your squad. Discord channel permissions control access to channel posts.</p>
+<h3>Across participating servers</h3>
+<p>Shared discovery listings include server identity, host name and avatar, host game tag, game, mode, platform, selected region, microphone preference, capacity, counts, status, and expiration information. A server’s setup may automatically share new lobbies. General cross-server discovery does not expose the full guest roster, guest game tags, free-text lobby notes, or your complete saved Player ID.</p>
+<p>When you join another server’s lobby, your name, avatar, and one relevant game tag can become part of its roster and be visible to that destination’s lobby viewers. Joining a listing does not necessarily make you a member of its Discord server.</p>
+<h3>Voice counts</h3>
+<p>The network’s aggregate “in voice now” count may include members in all voice and stage channels of participating servers, not only matchmaking rooms. User IDs are used internally to avoid double-counting; the network count does not publish those identities, channel locations, or a per-server breakdown.</p>
+<h2>4. Optional browser audio</h2>
+<p>Joining browser voice starts in listen-only mode. Your microphone is requested only when you explicitly enable it. The service receives and relays audio to authorized participants through temporary processing buffers. It does not record, transcribe, or save the audio to disk as a feature.</p>
+<p><strong>Browser audio is not end-to-end encrypted.</strong> The server processes it. In the current internet deployment, Cloudflare terminates public HTTPS and carries traffic through an encrypted tunnel to the server. Cloudflare and the server therefore process the connection; this is different from an end-to-end encrypted call.</p>
+<p>Participants in the room see participant names and connection or mute state. The host can mute a player, but cannot remotely activate that player’s microphone. Voice invitation and access state is held in memory and expires or is invalidated with the relevant session, room, or membership.</p>
+<p>Other participants may independently record or broadcast a conversation; we cannot prevent this. The Service’s no-recording behavior does not guarantee that another participant is not recording.</p>
+<h2>5. Providers and other disclosures</h2>
+<p>Discord provides identity, application delivery, server features, messages, and Discord voice. Cloudflare supports the current public connection. Hosting and network providers may process technical connection information, such as IP addresses and request metadata, under their own privacy practices.</p>
+<p>We may disclose relevant information to service providers necessary to operate the Service, with your instruction or consent, or when reasonably needed to comply with law, respond to valid legal process, or protect people and the Service against abuse. We do not publish credentials or private access links as part of matchmaking discovery.</p>
+<h2>6. Retention and deletion</h2>
+<p>Saved profiles, game tags, server configuration, lobby records, and participation history persist between bot restarts. <strong>Closing or expiring a lobby does not automatically erase its database history.</strong> Leaving a server, removing the bot, or revoking authorization also does not automatically purge all saved records. The current system has no automatic age-based database purge.</p>
+<p>Closing a lobby normally removes its bot-created voice room and archives or locks its Discord thread; archived posts can remain on Discord. Removing a saved game tag does not retroactively remove it from existing rosters or messages. Transient audio is not kept as a recording; active voice state is cleared as rooms end or the service shuts down.</p>
+<p>You may request deletion through the contact below. We will verify that the request concerns your data, remove data no longer needed for the Service, and honor applicable deletion requirements. Limited records may need to be retained for security, dispute handling, or legal obligations. Copies in Discord, another member’s posts, or a third party’s systems may require a separate request to that party. Contact us for the scope of a request, including any applicable backup or legal-retention limitations.</p>
+<h2>7. Your choices and requests</h2>
+<ul><li>Use My Player ID to change preferences and remove saved game tags. This does not delete your whole account history.</li><li>Leave a lobby, stop browser audio, or withdraw microphone permission in your browser.</li><li>Revoke the application through Discord’s Authorized Apps settings, or ask a server manager to remove the bot.</li><li>Contact us to request access, correction, or deletion of information associated with you, or to ask a privacy question.</li></ul>
+<p>For a privacy request, provide your Discord user ID and the relevant server or lobby if known. Server-wide requests must come from an authorized server representative. We may verify control of the relevant account; we will not ask for your password or bot token. Rights and response requirements vary by location.</p>
+<h2>8. Browser storage and this website</h2>
+<p>The Activity may store interface preferences, such as sound settings, locally in your browser. Browser demo mode may save a sample Player ID locally; this is separate from the signed-in service. Session access tokens are held in application memory rather than saved in the matchmaking database.</p>
+<p>These static legal pages do not include advertising trackers, analytics scripts, or application-set cookies. Your hosting provider, Discord, and other linked services may independently process technical logs or use their own storage. Following a support or Discord link takes you to that service.</p>
+<h2>9. Security</h2>
+<p>We use access checks, short-lived signed sessions, restricted voice access, and encrypted public connections to reduce risk. No system is perfectly secure. Do not put secrets or sensitive personal information in game tags, lobby notes, or voice conversations. Protect your Discord account and report suspected misuse through support.</p>
+<h2>10. Children and international processing</h2>
+<p>The Service is not intended for anyone below Discord’s minimum age for their country. Contact us if you believe a child below the applicable age has provided personal information. Providers or participants may process information in countries different from yours, with different data-protection rules.</p>
+<h2>11. Changes</h2>
+<p>We will update this Policy when our practices change. The date above identifies the current version. We will provide additional notice of material changes when appropriate or required.</p>
+<h2>12. Privacy contact</h2><p>Contact XfinitGaming at <a class="contact-link" href="mailto:xfinitgaming00@gmail.com">xfinitgaming00@gmail.com</a> or through our <a href="https://discord.gg/xxAQmVdtND" rel="noopener noreferrer">Discord support server</a>. Include “XFG Matchmaking” in your subject or request. Never send passwords, bot tokens, microphone recordings, or identity documents.</p>
+</article></main>
+<footer><p>XfinitGaming · XFG Matchmaking</p><a href="index.html">Legal home</a><span aria-hidden="true"> · </span><a href="terms.html">Terms</a><span aria-hidden="true"> · </span><a href="privacy.html">Privacy</a></footer>
+</body>
+</html>
